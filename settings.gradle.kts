@@ -24,4 +24,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "Bike Goal Widget"
 include(":app")
- 
+include(":core")
+include(":domain")
+include(":presentation")
+include(":data")
+include(":sync")

@@ -68,12 +68,17 @@ The data layer is responsible for transforming and persisting data.
 
 ```text
 app
+├── database
+├── di
+├── theme
+
+sync
+├── worker
 
 core
 ├── common
-├── database
-├── worker
-├── ui
+├── extensions
+├── utils
 
 data
 ├── datasource
@@ -88,9 +93,11 @@ domain
 ├── usecase
 
 presentation
-├── dashboard
-├── settings
+├── screens
+    ├── dashboard
+    └── settings
 ├── widget
+├── ui
 ```
 
 ---
@@ -109,10 +116,6 @@ UI is rendered exclusively from immutable state.
 ## Intent
 
 User actions are represented as intents.
-
-## Reducer
-
-Transforms state based on incoming intents and business results.
 
 ## Effect
 
